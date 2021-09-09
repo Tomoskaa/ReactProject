@@ -1,0 +1,32 @@
+.menu-img img {
+    width: 150px;
+    height: 150px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title-m h1 {
+    position: relative;
+    bottom: -140px;
+}
+
+.title-m h1:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: blue;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-image-menu {
+    min-height: 50vh;
+    background: url("../images/bg-menu.jpg") center/cover fixed no-repeat;
+    margin-top: -48px;
+}
+
+

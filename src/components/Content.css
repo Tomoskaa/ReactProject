@@ -1,0 +1,141 @@
+.hero-container {
+    display: flex;
+    min-height: 800px;
+    height: 100vh;
+}
+
+.bg-image {
+    min-height: 80vh;
+    background: url("../images/gallery.jpg") center/cover no-repeat;
+}
+
+.bg {
+    width: 100%;
+    height: 528px;
+    opacity: 0.8;
+}
+
+.text-img {
+    position: relative;
+    top: -500px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn-img {
+    position: relative;
+    top: -500px;
+}
+
+.services {
+    position: relative;
+    padding: 80px;
+    background-color: whitesmoke;
+}
+
+.services .title {
+    position: relative;
+    top: -35px;
+}
+
+.mail {
+    text-decoration: none;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    frameborder: 0;
+    border: 0;
+}
+
+.menu-image {
+    min-height: 80vh;
+    background: url("../images/bg-1.jpg") center/cover fixed no-repeat;
+}
+
+.menu {
+    height: 528px;
+    opacity: 1;
+}
+
+@media screen and (min-width: 776px) {
+    .menu {
+        display: flex;
+    }
+    .menu-text {
+        flex: 0 0 20%;
+    }
+    .menu-image {
+
+        flex: 0 0 80%;
+        clip-path: circle(80%);
+    }
+}
+
+.number p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.number:hover {
+    color: blue;
+}
+
+.number .fas {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.number h3 {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 576px) {
+    .count {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .count {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.galery {
+    padding: 40px;
+    background: white;
+}
+
+.item a img {
+    width: 250px;
+    height: 250px;
+}
+
+.galery-item img {
+    display: block;
+    width: 100%;
+    height: 90%;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.galery-item img:hover{
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 576px) {
+    .galery-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .galery-center {
+        grid-template-columns: repeat(4, 1fr);
+}
+
+}
